@@ -1,8 +1,11 @@
-import "./App.css";
+import Home from "./Components/Home/Home";
 
 function App() {
-  const heading = <h1 className="text-5xl bg-stone-700">hello</h1>;
-  return <>{heading}</>;
+  return (
+    <>
+      <Home></Home>
+    </>
+  );
 }
 
 export default App;
