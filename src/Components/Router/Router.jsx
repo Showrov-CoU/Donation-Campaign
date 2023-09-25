@@ -3,11 +3,16 @@ import Home from "../Home/Home";
 import Donation from "../Donation/Donation";
 import Statistics from "../Statistics/Statistics";
 
+
 const Router = createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
     children: [
+    //   {
+    //     path: "/",
+    //     element: <Home></Home>,
+    //   },
       {
         path: "/donation",
         element: <Donation></Donation>,
