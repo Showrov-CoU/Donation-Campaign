@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import Swal from "sweetalert2";
 
 const Select = ({ item }) => {
   const handleStorage = () => {
@@ -7,15 +8,15 @@ const Select = ({ item }) => {
     if (!addDonation) {
       addDonationArr.push(item);
       localStorage.setItem("items", JSON.stringify(addDonationArr));
-      alert("added");
+      Swal.fire("Good job!", "Successfully added this donation!", "success");
     } else {
       const exist = addDonation.find((donation) => donation.id === item.id);
       if (!exist) {
         addDonationArr.push(...addDonation, item);
         localStorage.setItem("items", JSON.stringify(addDonationArr));
-        alert("added");
+        Swal.fire("Good job!", "Successfully added this donation!", "success");
       } else {
-        alert("already added");
+        Swal.fire("Oppss..!", "Already added this donation!", "error");
       }
     }
   };
