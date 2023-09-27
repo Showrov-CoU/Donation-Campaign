@@ -1,13 +1,12 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "../NavBar/NavBar";
 
-
 const Layout = () => {
-//   const [isHome, setIsHome] = useState(0);
-//   const handleHeroImage = (e) => {
-//     console.log(e.target.innerText);
-//     e.target.innerText === "Home" ? setIsHome(0) : setIsHome(1);
-//   };
+  //   const [isHome, setIsHome] = useState(0);
+  //   const handleHeroImage = (e) => {
+  //     console.log(e.target.innerText);
+  //     e.target.innerText === "Home" ? setIsHome(0) : setIsHome(1);
+  //   };
   return (
     <div className="container mx-auto">
       {/* <div className="relative">
