@@ -31,7 +31,7 @@ const Select = ({ item }) => {
             onClick={handleStorage}
             style={{ backgroundColor: item.textColor }}
           >
-            Donate {item.price}
+            Donate ${item.price}
           </button>
         </div>
       </div>

@@ -21,7 +21,12 @@ const DonationCard = ({ card }) => {
             {card.category}
           </span>
           <h2 className="card-title text-base md:text-lg">{card.title}</h2>
-          <p className="text-sm font-semibold" style={{color:card.textColor}}>{card.price}</p>
+          <p
+            className="text-sm font-semibold"
+            style={{ color: card.textColor }}
+          >
+            ${card.price}
+          </p>
           <div className="card-actions justify-start">
             <button
               className="px-3 py-1 text-white rounded-md"
@@ -31,11 +36,7 @@ const DonationCard = ({ card }) => {
             </button>
           </div>
         </div>
-        <div>
-            {
-                
-            }
-        </div>
+        <div>{}</div>
       </div>
     </div>
   );

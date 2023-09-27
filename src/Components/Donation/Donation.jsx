@@ -15,7 +15,7 @@ const Donation = () => {
     }
   }, []);
 
-  console.log(isSee);
+  
   const handleDelete = () => {
     Swal.fire({
       title: "Are you sure?",
