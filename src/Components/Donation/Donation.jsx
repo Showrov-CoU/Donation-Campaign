@@ -15,7 +15,6 @@ const Donation = () => {
     }
   }, []);
 
-  
   const handleDelete = () => {
     Swal.fire({
       title: "Are you sure?",
@@ -35,7 +34,7 @@ const Donation = () => {
     });
   };
   return (
-    <div className="my-14 mx-4">
+    <div className="mt-20 md:mt-28 mb-10 mx-[5%]">
       {isFound ? (
         <p className="h-[60vh] flex justify-center items-center text-lg font-bold">
           No Data Found

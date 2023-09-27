@@ -25,8 +25,8 @@ const Home = () => {
   const handleSearch = () => {
     setSearchValue("");
   };
-//   console.log(searchValue);
-//   console.log(searchCategory.length);
+  //   console.log(searchValue);
+  //   console.log(searchCategory.length);
   return (
     <div>
       <div>

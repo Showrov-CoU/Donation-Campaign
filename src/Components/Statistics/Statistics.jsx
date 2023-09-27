@@ -16,12 +16,12 @@ const Statistics = () => {
   }, []);
   console.log(storedData);
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center mt-[60px] md:mt-28 mb-10">
       <PChart
         percentage={percentage}
         remainPercentage={remainPercentage}
       ></PChart>
-      <div className="flex flex-col md:flex-row justify-center gap-3 md:gap-10 pb-10">
+      <div className="flex flex-col md:flex-row justify-center gap-2 md:gap-10 pb-10">
         <div className="flex items-center gap-2">
           <p>Your Donation</p>
           <div className="h-3 w-20 bg-[#00C49F] rounded-md"></div>
