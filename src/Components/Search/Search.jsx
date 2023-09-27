@@ -8,9 +8,9 @@ const Search = ({ handleSearchValue, handleSearch, searchValue }) => {
       </h1>
       <div className="w-[40%] md:w-fit mx-auto flex justify-center items-center">
         <input
-          onChange={handleSearchValue}
           type="text"
           value={searchValue}
+          onChange={handleSearchValue}
           placeholder="Search"
           className="input border-[#DEDEDE] rounded-e-none border-e-0 input-xs md:input-sm w-full focus:outline-none"
         />
