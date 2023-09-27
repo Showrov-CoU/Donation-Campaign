@@ -10,7 +10,7 @@ const Selected = () => {
     const findcategory = data.find((data) => data.id === id);
     setItem(findcategory);
   }, [id, data]);
-//   console.log(item);
+  //   console.log(item);
   return (
     <div className="mt-10">
       <Select item={item}></Select>

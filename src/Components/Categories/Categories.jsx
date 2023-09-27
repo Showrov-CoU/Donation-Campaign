@@ -1,18 +1,18 @@
 import PropTypes from "prop-types";
 import Category from "../Category/Category";
 
-const Categories = ({ searchCategory }) => {
+const Categories = ({ cardsInfo }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-      {searchCategory?.map((cardInfo) => (
-        <Category key={cardInfo.id} cardInfo={cardInfo}></Category>
+      {cardsInfo?.map((card) => (
+        <Category key={card.id} card={card}></Category>
       ))}
     </div>
   );
 };
 
 Categories.propTypes = {
-  searchCategory: PropTypes.array,
+  cardsInfo: PropTypes.array,
 };
 
 export default Categories;

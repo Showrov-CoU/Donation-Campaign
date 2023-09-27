@@ -1,4 +1,5 @@
 import Search from "../Search/Search";
+import PropTypes from "prop-types";
 
 const Hero = ({ handleSearchValue, handleSearch, searchValue }) => {
   return (
@@ -15,4 +16,9 @@ const Hero = ({ handleSearchValue, handleSearch, searchValue }) => {
   );
 };
 
+Hero.propTypes = {
+  handleSearchValue: PropTypes.func,
+  handleSearch: PropTypes.func,
+  searchValue: PropTypes.string,
+};
 export default Hero;

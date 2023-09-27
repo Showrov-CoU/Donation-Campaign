@@ -23,14 +23,10 @@ const Home = () => {
   };
 
   const handleSearch = () => {
-    const filteredCategory = searchCategory.filter((item) =>
-      item.category.toLowerCase().includes(searchValue.toLowerCase())
-    );
-    setSearchCategory(filteredCategory);
     setSearchValue("");
   };
   //   console.log(searchValue);
-  console.log(searchCategory);
+  //   console.log(searchCategory);
   return (
     <div>
       <Hero
@@ -39,7 +35,7 @@ const Home = () => {
         searchValue={searchValue}
       ></Hero>
       <div className="my-5 md:my-10">
-        <Categories searchCategory={searchCategory}></Categories>
+        <Categories cardsInfo={cardsInfo}></Categories>
       </div>
     </div>
   );

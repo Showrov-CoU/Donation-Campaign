@@ -31,8 +31,6 @@ const renderCustomizedLabel = ({
 };
 
 const PChart = ({ percentage, remainPercentage }) => {
-  console.log(percentage);
-  console.log(remainPercentage);
   let a = parseFloat(percentage);
   let b = parseFloat(remainPercentage);
   const data = [
