@@ -23,7 +23,7 @@ const Select = ({ item }) => {
 
   return (
     <>
-      <div className="relative overflow-hidden w-[85%] h-[28rem] mx-auto rounded-xl">
+      <div className="relative overflow-hidden w-[85%] lg:h-[28rem] mx-auto rounded-xl">
         <img src={item.image} className="w-full h-full" alt="" />
         <div className="absolute w-full bottom-0 h-20 bg-[#0b0b0b80] flex items-center ps-10">
           <button
@@ -35,7 +35,7 @@ const Select = ({ item }) => {
           </button>
         </div>
       </div>
-      <h1 className="text-3xl font-bold capitalize mt-10 mb-5 w-[85%] mx-auto">
+      <h1 className="text-3xl font-bold capitalize mt-5 mb-4 w-[85%] mx-auto">
         {item.title}
       </h1>
       <p className="text-sm w-[85%] mx-auto">{item.description}</p>

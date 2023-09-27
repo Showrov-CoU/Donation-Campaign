@@ -5,7 +5,7 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <>
-      <nav className="flex justify-between items-center">
+      <nav className="flex justify-between items-center w-full">
         <div className="w-32 md:w-48 lg:w-52">
           <img src="/logo.png" alt="" />
         </div>

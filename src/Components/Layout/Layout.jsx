@@ -8,7 +8,7 @@ const Layout = () => {
   //     e.target.innerText === "Home" ? setIsHome(0) : setIsHome(1);
   //   };
   return (
-    <div className="container mx-auto">
+    <div>
       {/* <div className="relative">
         <div className={isHome === 0 ? "" : "hidden"}>
           <Hero></Hero>
@@ -20,8 +20,14 @@ const Layout = () => {
       <div>
         <Outlet></Outlet>
       </div> */}
-      <NavBar></NavBar>
-      <Outlet></Outlet>
+
+      <div className="bg-[#fcfcfc] px-[5%] py-3 fixed z-10 top-0 w-full">
+        <NavBar></NavBar>
+      </div>
+
+      <div className="mt-12 md:mt-16">
+        <Outlet></Outlet>
+      </div>
     </div>
   );
 };

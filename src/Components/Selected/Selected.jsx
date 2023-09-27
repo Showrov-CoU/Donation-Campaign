@@ -12,7 +12,7 @@ const Selected = () => {
   }, [id, data]);
   //   console.log(item);
   return (
-    <div className="mt-10">
+    <div className="mt-20 md:mt-28 mb-10">
       <Select item={item}></Select>
     </div>
   );

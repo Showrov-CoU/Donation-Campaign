@@ -15,7 +15,7 @@ const Search = ({ handleSearchValue, handleSearch, searchValue }) => {
           className="input border-[#DEDEDE] rounded-e-none border-e-0 input-xs md:input-sm w-full focus:outline-none"
         />
         <button
-          onClick={() => handleSearch(searchValue)}
+          onClick={handleSearch}
           className="btn btn-xs md:btn-sm rounded-s-none bg-[#FF444A] capitalize text-white focus:bg-[#FF444A] hover:bg-[#FF444A]"
         >
           Search

@@ -25,17 +25,19 @@ const Home = () => {
   const handleSearch = () => {
     setSearchValue("");
   };
-  //   console.log(searchValue);
-  //   console.log(searchCategory);
+//   console.log(searchValue);
+//   console.log(searchCategory.length);
   return (
     <div>
-      <Hero
-        handleSearchValue={handleSearchValue}
-        handleSearch={handleSearch}
-        searchValue={searchValue}
-      ></Hero>
-      <div className="my-5 md:my-10">
-        <Categories cardsInfo={cardsInfo}></Categories>
+      <div>
+        <Hero
+          handleSearchValue={handleSearchValue}
+          handleSearch={handleSearch}
+          searchValue={searchValue}
+        ></Hero>
+        <div className="mt-4 mb-10">
+          <Categories searchCategory={searchCategory}></Categories>
+        </div>
       </div>
     </div>
   );
