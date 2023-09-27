@@ -4,7 +4,7 @@ import NavBar from "../NavBar/NavBar";
 const Layout = () => {
   return (
     <div>
-      <div className="bg-[#fcfcfc] px-[5%] py-3 fixed z-10 top-0 w-full">
+      <div className="bg-[#fcfcfc] px-[5%] py-3 fixed z-10 top-0 w-full shadow-sm">
         <NavBar></NavBar>
       </div>
 
